@@ -1,0 +1,2 @@
+2021-03-29 12:35:20  [ main:1706 ] - [ ERROR ]  Table 'db_hibernatetask.person' doesn't exist
+2021-03-29 12:35:20  [ main:1718 ] - [ ERROR ]  Error while committing the transaction

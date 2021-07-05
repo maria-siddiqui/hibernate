@@ -1,0 +1,153 @@
+Microsoft Windows [Version 10.0.19042.804]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+E:\zeryabKhanTraining>java Main hello 123
+Error: A JNI error has occurred, please check your installation and try again
+Exception in thread "main" java.lang.UnsupportedClassVersionError: Main has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+        at java.lang.ClassLoader.defineClass1(Native Method)
+        at java.lang.ClassLoader.defineClass(Unknown Source)
+        at java.security.SecureClassLoader.defineClass(Unknown Source)
+        at java.net.URLClassLoader.defineClass(Unknown Source)
+        at java.net.URLClassLoader.access$100(Unknown Source)
+        at java.net.URLClassLoader$1.run(Unknown Source)
+        at java.net.URLClassLoader$1.run(Unknown Source)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at java.net.URLClassLoader.findClass(Unknown Source)
+        at java.lang.ClassLoader.loadClass(Unknown Source)
+        at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+        at java.lang.ClassLoader.loadClass(Unknown Source)
+        at sun.launcher.LauncherHelper.checkAndLoadMain(Unknown Source)
+
+E:\zeryabKhanTraining>
+
+E:\zeryabKhanTraining>javac -target 8 -source 8 Main.java
+warning: [options] bootstrap class path not set in conjunction with -source 8
+1 warning
+
+E:\zeryabKhanTraining>java Main heloo 123
+heloo
+123
+
+E:\zeryabKhanTraining>git init
+'git' is not recognized as an internal or external command,
+operable program or batch file.
+
+E:\zeryabKhanTraining>javac -target 8 -source 8 Fibonacci.java
+error: file not found: Fibonacci.java
+Usage: javac <options> <source files>
+use --help for a list of possible options
+
+E:\zeryabKhanTraining>javac -target 8 -source 8 TaskFibonacci.java
+warning: [options] bootstrap class path not set in conjunction with -source 8
+1 warning
+
+E:\zeryabKhanTraining>java TaskFibonacci 10
+0 1 1 2 3 5 8 13 21 34
+E:\zeryabKhanTraining>javac -target 8 -source 8 ReverseString.java
+warning: [options] bootstrap class path not set in conjunction with -source 8
+1 warning
+
+E:\zeryabKhanTraining>java ReverseString
+Enter String to reverse
+RaceCar
+raCecaR
+
+E:\zeryabKhanTraining>javac -target 8 -source 8 PrimeNumbers.java
+warning: [options] bootstrap class path not set in conjunction with -source 8
+1 warning
+
+E:\zeryabKhanTraining>java PrimeNumbers
+Enter prime number 1
+5
+Enter prime number 2
+53
+5 7 11 13 17 19 23 29 31 37 41 43 47 53
+E:\zeryabKhanTraining>javac -target 8 -source 8 NumbersAdditions.java
+error: file not found: NumbersAdditions.java
+Usage: javac <options> <source files>
+use --help for a list of possible options
+
+E:\zeryabKhanTraining>javac -target 8 -source 8 NumberAdditions.java
+warning: [options] bootstrap class path not set in conjunction with -source 8
+NumberAdditions.java:8: error: cannot find symbol
+        SinglyLinkedList num1 = new SinglyLinkedList();
+        ^
+  symbol:   class SinglyLinkedList
+  location: class NumberAdditions
+NumberAdditions.java:8: error: cannot find symbol
+        SinglyLinkedList num1 = new SinglyLinkedList();
+                                    ^
+  symbol:   class SinglyLinkedList
+  location: class NumberAdditions
+NumberAdditions.java:9: error: cannot find symbol
+        SinglyLinkedList num2 = new SinglyLinkedList();
+        ^
+  symbol:   class SinglyLinkedList
+  location: class NumberAdditions
+NumberAdditions.java:9: error: cannot find symbol
+        SinglyLinkedList num2 = new SinglyLinkedList();
+                                    ^
+  symbol:   class SinglyLinkedList
+  location: class NumberAdditions
+NumberAdditions.java:10: error: cannot find symbol
+        SinglyLinkedList ans = new SinglyLinkedList();
+        ^
+  symbol:   class SinglyLinkedList
+  location: class NumberAdditions
+NumberAdditions.java:10: error: cannot find symbol
+        SinglyLinkedList ans = new SinglyLinkedList();
+                                   ^
+  symbol:   class SinglyLinkedList
+  location: class NumberAdditions
+6 errors
+1 warning
+
+E:\zeryabKhanTraining>javac -target 8 -source 8 NumberAdditions.java
+warning: [options] bootstrap class path not set in conjunction with -source 8
+1 warning
+
+E:\zeryabKhanTraining>java NumberAdditions
+Enter number 1
+999999999999
+Enter number 2
+12121212121
+
+Sum = 1012121212120
+
+E:\zeryabKhanTraining>java SinglyLinkedList
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1->2->3->4->5->6->7->8->9->10->11->12
+trying to remove 2
+trying to remove 3
+trying to remove 4
+trying to remove 5
+trying to remove 6
+trying to remove 7
+Value Match to remove 7
+1->2->3->4->5->6->8->9->10->11->12
+trying to remove 2
+trying to remove 3
+trying to remove 4
+Value Match to remove 4
+1->2->3->5->6->8->9->10->11->12
+trying to remove 2
+trying to remove 3
+trying to remove 5
+trying to remove 6
+trying to remove 8
+trying to remove 9
+trying to remove 10
+trying to remove 11
+Value Match to remove 11
+1->2->3->5->6->8->9->10->12

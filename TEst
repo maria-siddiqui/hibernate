@@ -1,0 +1,42 @@
+import java.util.Random;
+public class HelloWorld{
+
+     public static void main(String []args){
+         char[] array={'A','B','C','D','E','F','G','H','I','J','K','L',
+         'M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','0','1','2','3'
+         ,'4','5','6','7','8','9'};
+         int size=10;
+         int num=5;
+         int chars=5;
+         System.out.println("HelloX");
+        System.out.println(random(array,size ,num,chars));
+     }
+     public static String random(char[] array,int size ,int num,int chars){
+         String s="";
+         int nCount=0;
+         int cCount=0;
+         String usedIndex="";
+         while(s.length()<size&&nCount!=num&&chars!=cCount){
+             Random r=new Random();
+             int index=r.nextInt(array.length);
+             if(!usedIndex.contains(String.valueOf(array[index]))){
+                 s+=array[index];
+                 if(array[index]>='0'&&array[index]<='9'){
+                     nCount++;
+                 }
+                 else{
+                     cCount++;
+                 }
+             }
+             if(s.length()==size&&nCount==num&&chars==cCount){
+                 break;
+             }
+             else{
+                 s+="";
+                 cCount=0;
+                 nCount=0;
+             }
+         }
+         return s;
+     }
+}
